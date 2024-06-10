@@ -5,7 +5,7 @@
     "mongoose": "^8.3.2",
     "serverless-http": "^3.2.0"
   },
-  "name": "serverless-api-qw",
+  "name": "serverless-api-saporna",
   "version": "1.0.0",
   "main": "index.js",
   "devDependencies": {},

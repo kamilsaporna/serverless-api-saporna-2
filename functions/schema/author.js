@@ -2,27 +2,22 @@ const mongoose = require("mongoose");
 const { Schema } = mongoose;
 
 const authorSchema = new Schema({
-  name: {
+  productType: {
     type: String,
     required: true,
   },
-  age: {
+  quantity: {
     type: Number,
     required: true,
   },
-  address: {
+  unit: {
     type: String,
     required: true,
   },
-  username: String,
-  password: String,
-});
-authorSchema.pre("save", function (next) {
-  const username = this.name.toLowerCase().replace(/\s/g, "");
-  const password = `${this.name}${this.age}`;
-  this.username = username;
-  this.password = password;
-  next();
+  status: {
+    type: String,
+    required: true,
+  }
 });
 
 module.exports = authorSchema;
