@@ -5,7 +5,7 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 
 const app = express();
-const dbCloudUrl = "mongodb+srv://admin:12345@api-sharing.wwdxcbn.mongodb.net/";
+const dbCloudUrl = "mongodb+srv://admin:12345@api-sharing.wwdxcbn.mongodb.net/qwDB";
 
 app.use(cors());
 app.use(express.json());
