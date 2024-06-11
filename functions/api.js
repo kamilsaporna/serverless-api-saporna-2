@@ -7,7 +7,7 @@ const cors = require("cors");
 const app = express();
 const dbCloudUrl = "mongodb+srv://admin:12345@cluster1.lcn1obe.mongodb.net/inventoryDB?retryWrites=true&w=majority&appName=Cluster1";
 
-app.use(cors());
+app.use(cors({ origin: '*' }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
